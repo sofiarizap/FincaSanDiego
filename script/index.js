@@ -5,39 +5,33 @@ window.addEventListener ('mousemove', function (){
     if (posicionobj1 <= tamañoDePantalla){
         animacion.style.animation ='mover 2s ease-out'
     }
-})  
-,
-window.addEventListener ('scroll', function (){
-    let animacion = document.getElementById('animado1','animado3') ;
-    let posicionobj1 = animacion.getBoundingClientRect().top;
-    let tamañoDePantalla = window.innerHeight;
-    if (posicionobj1 < tamañoDePantalla){
-        animacion.style.animation ='mover1 1.2s ease-in'
+});
+function cambioDeFotos() {
+    let i = 1;
+    let fotos = document.querySelector(".carimg");
+    while (i <= 5) {
+        this.esperaPorMs(3000);
+        for (let j = 1; j > 0; j -= 0.1) {
+            this.esperaPorMs(25);
+            fotos.style.opacity = `${j}`;
+        }
+        fotos.style.backgroundImage = `url(../web/assets/Imagenes/banner${i}.jpg)`
+        // if(i == 0){
+        //     fotos.style.backgroundImage = `url(../web/assets/Imagenes/banner${i}.jpg)`
+        // }
+        // else{
+        //     fotos.style.backgroundImage = `url(../web/assets/Imagenes/foto${i}.jpeg)`
+        // }
+        for (let j = 0; j < 1; j += 0.1) {
+            fotos.style.opacity = `${j}`;
+            this.esperaPorMs(25);
+        }
+        i++;
+        if (i == 6) {
+            i = 0;
+        }
     }
-}),
-window.addEventListener ('scroll', function (){
-    let animacion = document.getElementById('animado2','animado4');
-    let posicionobj1 = animacion.getBoundingClientRect().top;
-    let tamañoDePantalla = window.innerHeight;
-    if (posicionobj1 <= tamañoDePantalla){
-        animacion.style.animation ='mover 1.2s ease-out'
-    }
-}),
-window.addEventListener ('scroll', function () {
-    let animacion = document.getElementById('animado3') ;
-    let posicionobj1 = animacion.getBoundingClientRect().top;
-    let tamañoDePantalla = window.innerHeight;
-    if (posicionobj1 < tamañoDePantalla/4){
-        animacion.style.animation ='mover1 1.2s ease-in'
-    }
-}),
-window.addEventListener ('scroll', function (){
-    let animacion = document.getElementById('animado4') ;
-    let posicionobj1 = animacion.getBoundingClientRect().top;
-    let tamañoDePantalla = window.innerHeight;
-    if (posicionobj1 <= tamañoDePantalla/5){
-        animacion.style.animation ='mover 1.2s ease-out'
-    }
-})
+}  
+
     
     
