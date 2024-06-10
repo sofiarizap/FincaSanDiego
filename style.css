@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@media (min-width: 425px) and (max-width: 590px){
+    .catar {
+        width: 4rem;
+        height: 3.7rem;
+    }
+}
+header{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    background-size: cover;
+    background-position: 10% 14%;
+    background-image: linear-gradient( to top,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url("./Assets/fondo.jpg")
+}
+.headerTop{
+    display: flex;
+    align-items: flex-start;
+    height: 70%;
+}
+.headerBottom{
+    display: flex;
+    align-items: flex-start;
+    height: 30%;
+}
+h1{
+    color: white;
+    margin-left: 1rem;
+}
+header nav a{
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+    margin: 0.4rem;
+}
+header nav{
+    margin: 1rem;
+}
+nav a:hover{
+    border: 1px solid white;
+    border-radius: 8px;
+}
+main{
+    min-height: 130vh;
+    border-bottom: 1px solid white;
+}
+.mainTop{
+    display: flex;
+    flex-direction: column;
+}
+.tituloNav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.tituloNav h2{
+    margin-bottom: 1rem;
+}
+@media (min-width: 425px) and (max-width: 520px){
+    .tituloNav h2 {
+        font-size: 1.3rem;
+    }
+}
+.tituloNav a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin: 0.4rem;
+}
+.tituloNav  nav a:hover{
+    background-color:rgba(255, 255, 255, 0.201);
+}
+.fichas{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    flex-wrap: wrap;
+}
+.ficha1{
+    display: flex;
+    flex-direction: column;
+    margin: 1.4rem;
+}
+.ficha2{
+    display: flex;
+    flex-direction: column;
+    margin: 1.4rem;
+}
+.ficha3{
+    display: flex;
+    flex-direction: column;
+    margin: 1.4rem;
+}
+.fichas img{
+    width: 260px;
+    height: 250px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.precio{
+    display: flex;
+    justify-content: space-between;
+}
+.buy{
+    margin: 0.5rem;
+}
+.buy a{
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 2px;
+    text-decoration: none;
+}
+.mainBottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+.mainBottom h2{
+    margin: 1rem;
+}
+@media (min-width: 425px) and (max-width: 876px){
+    .mainBottom h2{
+        margin: 0.2rem;
+    }
+    .mainBottom {
+        margin: 0 1rem 2rem 1rem;
+    }
+}
+.listaCuadro{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+tr,th,td{
+    border: 2px solid rgb(248, 245, 245);
+    font-size: 1rem;
+    color: aliceblue;
+    padding: 10px;
+    text-align: left;
+}
+body{
+    background-color: black;
+    color: white;
+}
+footer{
+    height: 14vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:9rem;
+    align-items: center;
+}
+@media (min-width: 425px) and (max-width: 860px){
+    footer{
+        height: 7vh;
+        gap:1rem;
+    }
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    margin: 0.5rem;
+}
+.footer1, .footer2, .footer3{
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
