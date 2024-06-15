@@ -2,8 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
+    font-weight: 300;
     font-style: normal;
 
 }
@@ -17,8 +18,9 @@ header{
     background-image: linear-gradient( to top,rgba(0, 0, 0, 0.348), rgba(0, 0, 0, 0.468) ), url("./assets/IMAGENES/baner1.jpg")
 }
 .headerTop{
+    padding-top: 1rem;
     display: flex;
-    align-items: flex-start;
+    align-items: start;
     justify-content: end;
     height: 30%;
 }
@@ -37,12 +39,7 @@ header{
     padding: 5px;
 }
 
-header nav a{
-    color: white;
-    text-decoration: none;
-    padding: 3px;
-    margin: 0.4rem;
-}
+
 .hit-the-floor {
     color: #fff;
     font-size: 5rem;
@@ -70,23 +67,17 @@ header nav a{
     font-style: normal;
     font-weight: 100;
 }
-header nav {
-    position: relative;
-    color: black;
-    padding-bottom: 20px;
+header nav a{
+    padding-top: 1rem;
     margin: 1rem;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+
 }
-header nav:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #000000;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+header nav a:hover {
+    text-decoration: 1px white solid;
+    color: #fff;
 }
 main{
     min-height: 130vh;
@@ -211,10 +202,10 @@ body{
 .info1{
     text-align: justify;
     width: 560px;
-    height: 400px;
+    height: 350px;
     display: flex;
     flex-direction: column;
-    background-color: #ffffffe8;
+    background-color: #ffffffd8;
     margin-right: 4rem;
     padding: 1rem;
 }
@@ -228,8 +219,19 @@ body{
     }
     
 }
-@media (min-width: 225px) and (max-width: 820px){
+@media (min-width: 820px) and (max-width: 1500px){
+    .columnas2 {
+        display: none;
+}
     
+}
+@media (min-width: 225px) and (max-width: 820px){
+    .columnas2 {
+        display:contents;
+    }
+    .columnas{
+        display: none;
+    }
     header{
         display: flex;
         flex-direction: column;
@@ -237,6 +239,17 @@ body{
         background-size: cover;
         background-position: 10% 14%;
         background-image: linear-gradient( to top,rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.397) ), url("./assets/IMAGENES/baner1movil.jpg")
+    }
+    .info1{
+        text-align: justify;
+        width: 560px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff9a;
+        margin-right: 4rem;
+        padding: 1rem;
+        font-weight: 500;
     }
     .hit-the-floor {
         font-size: 3rem;
@@ -272,8 +285,8 @@ body{
         align-items: center;
         justify-content: center;
         text-align: justify;
-        width: 96%;
-        height: 370px;
+        width: 94%;
+        height: 340px;
         display: flex;
         margin: 10px;
     }
@@ -305,9 +318,7 @@ body{
     padding: 5px;
     margin: 0.4rem;
 }
-.tituloNav  nav a:hover{
-    background-color:rgba(255, 255, 255, 0.201);
-}
+
 .fichas{
     display: flex;
     justify-content: center;
@@ -335,9 +346,9 @@ body{
     margin: 1.2rem;
 }
 .fichas img{
-    width: 260px;
-    height: 250px;
-    border: #586859 2px solid;
+    width: 280px;
+    height: 270px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .carousel-inner img{
     width: 260px;
@@ -394,99 +405,6 @@ body{
 }
 .cp a{
     color: #fff;
-}
-.fancy {
-    background-color: transparent;
-    border: 2px solid #000;
-    border-radius: 0;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    margin: 1rem;
-    outline: none;
-    overflow: visible;
-    padding: 1.55em 2em;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    text-transform: none;
-    transition: all 0.3s ease-in-out;
-    user-select: none;
-    font-size: 13px;
-}
-.fancy::before {
-    content: " ";
-    width: 1.5625rem;
-    height: 2px;
-    background: black;
-    top: 50%;
-    left: 1.2em;
-    position: absolute;
-    transform: translateY(-50%);
-    transform-origin: center;
-    transition: background 0.3s linear, width 0.3s linear;
-}
-.fancy .text {
-    font-size: 1.125em;
-    line-height: 1.33333em;
-    padding-left: 2.7em;
-    display: block;
-    text-align: left;
-    transition: all 0.3s ease-in-out;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black;
-}
-.fancy .top-key {
-    height: 2px;
-    width: 1.5625rem;
-    top: -2px;
-    left: 0.625rem;
-    position: absolute;
-    background: #e8e8e8;
-    transition: width 0.5s ease-out, left 0.3s ease-out;
-}
-.fancy .bottom-key-1 {
-    height: 2px;
-    width: 1.5625rem;
-    right: 1.875rem;
-    bottom: -2px;
-    position: absolute;
-    background: #e8e8e8;
-    transition: width 0.5s ease-out, right 0.3s ease-out;
-}
-.fancy .bottom-key-2 {
-    height: 2px;
-    width: 0.625rem;
-    right: 0.625rem;
-    bottom: -2px;
-    position: absolute;
-    background: #e8e8e8;
-    transition: width 0.5s ease-out, right 0.3s ease-out;
-}
-.fancy:hover {
-    color: white;
-    background: black;
-}
-.fancy:hover::before {
-    width: 0.9375rem;
-    background: white;
-}
-.fancy:hover .text {
-    color: white;
-    padding-left: 1.5em;
-}
-.fancy:hover .top-key {
-    left: -2px;
-    width: 0px;
-}
-.fancy:hover .bottom-key-1,
-    .fancy:hover .bottom-key-2 {
-    right: 0;
-    width: 0;
 }
 .btn {
     margin-top: 10px;
