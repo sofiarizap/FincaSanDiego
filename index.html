@@ -13,179 +13,277 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <!-- BOOTSTRAP -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW:wght@100..400&family=Playwrite+NL:wght@100..400&display=swap" rel="stylesheet"><!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="./assets/IMAGENES/favicon.png" type="image/x-icon">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./assets/style.css">
-
+    <link rel="stylesheet" href="./style.css">
 
     <title>| Finca San Diego </title>
 </head>
 <body>
-    <div id="app">
-        <header>
-            
-          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <nav class="navbar  m-0 p-0">
-                <div class="container-fluid m-0 p-0 d-flex flex-wrap align-items-center justify-content-center text-center">
-                  <h2 class="col-10 titulo">Finca San Diego</h1>
-                  <a class="navbar-brand m-0 p-0 d-flex flex-wrap col-2 align-items-center " href="#">
-                    <img src="./assets/IMAGENES/Icono.png" alt="Logo" width="100" height="94" class="d-inline-block  m-0 p-2 align-text-top ">
-                  </a>
+    <header>
+        <div class="headerTop">
+            <nav>
+                <a href="./index1.html">Inicio</a>
+                <a href="#espacios">Espacios</a>
+                <a href="#contactar">Contáctanos</a>
+            </nav>
+        </div>
+        <div class="headerBottom"> 
+                <h1 class="hit-the-floor centro">BIENVENIDOS</h1>
+                <h2 class="hit-the-floor2 centro">Finca San Diego</h2>
+        </div>
+    </header>
+    <main>
+        <div class="contenedorIndex"> 
+            <div class="mainTop"> 
+                <div class="tituloNav"> 
+                    <p class="centro"> Hermosa finca para tu descanso con todas las comodidas que mereces</p>
+                    <a class="fancy" href="https://api.whatsapp.com/send/?phone=3112234294">
+                        <span class="top-key"></span>
+                        <span class="text">VER DISPONIBILIDAD</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                    <div class="contenedorcarrusel ">
+                        <div class="  descripcion-inicial ">
+                            <p class="textoo">Un lugar para compartir en familia y con amigos, desconectar, disfrutar de la naturaleza y participar en todo tipo de eventos. Ofrecemos casa en el árbol, piscina, voleibol playa, parque infantil, ping-pong, bolirana electrónica, minitejo en plastilina, zona de hamacas, juegos de mesa, fogata, sendero ecológico y wifi.</p>
+                        </div>
+                        <div class="  carru-inial mt-3 col-md-6 " >
+                            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="./assets/IMAGENES/baner2.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./assets/IMAGENES/casa1.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./assets/IMAGENES/entrada4.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./assets/IMAGENES/cancha3.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./assets/IMAGENES/casa4.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </nav>
-              <div class="carousel-inner ">
-                <div class="carousel-item active">
-                  <img src="../assets/IMAGENES/baner1.jpg" class="d-block carimg w-100" alt="...">
+                <div class="contenedorinfo">
+                        <div class="info p-2">
+                            <p class="text-center titulocursiva">En Finca San Diego</p>
+                            <p class="p-2 text-black">Te invitamos a experimentar de nuestros espacios especialmente diseñados para todos los gustos con una capacidad de hasta 50 personas en acomodación múltiple. Disfruta de tu pasadia de Lunes a Viernes. </p>
+                            <p class="text-center direccion"> <img src="./assets/IMAGENES/ubicacion.png" alt="">VELÉZ SANTANDER, VIA GUAVATA KM 2 </p>
+                        </div>
                 </div>
-                <div class="carousel-item">
-                  <img src="../assets/IMAGENES/baner2.jpg" class="d-block carimg w-100" alt="...">
+                <div id="espacios" class="tituloNav">
+                    <p class="text-center">Descubre nuestros hermosos espacios diseñados para ofrecerte una gran experiencia durante tu estadía en nuestra </p>
+                    <p class="hit-the-floor3 text-black">Finca San Diego</p>
                 </div>
-                <div class="carousel-item">
-                  <img src="../assets/IMAGENES/baner3.jpg" class="d-block carimg w-100" alt="...">
-                </div>
+                <div class="fichas">
+                    <div class="ficha1">
+                        <img src="./Assets/IMAGENES/piscina1.jpg" alt="Pizza-completa">
+                        <div class="precio ">
+                            <p> 
+                                Piscina
+                            </p>
+                            <button class="btn">
+                                <svg viewBox="0 0 17.503 15.625" height="20.625" width="20.503" xmlns="http://www.w3.org/2000/svg" class="icon">
+                                  <path transform="translate(0 0)" d="M8.752,15.625h0L1.383,8.162a4.824,4.824,0,0,1,0-6.762,4.679,4.679,0,0,1,6.674,0l.694.7.694-.7a4.678,4.678,0,0,1,6.675,0,4.825,4.825,0,0,1,0,6.762L8.752,15.624ZM4.72,1.25A3.442,3.442,0,0,0,2.277,2.275a3.562,3.562,0,0,0,0,5l6.475,6.556,6.475-6.556a3.563,3.563,0,0,0,0-5A3.443,3.443,0,0,0,12.786,1.25h-.01a3.415,3.415,0,0,0-2.443,1.038L8.752,3.9,7.164,2.275A3.442,3.442,0,0,0,4.72,1.25Z" id="Fill"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="ficha2">
+                        <img src="./Assets/IMAGENES/cancha2.jpg" alt="Pizza-completa">
+                        <div class="precio">
+                            <p> 
+                                Cancha de Voleibol
+                            </p>
+                            <button class="btn">
+                                <svg viewBox="0 0 17.503 15.625" height="20.625" width="20.503" xmlns="http://www.w3.org/2000/svg" class="icon">
+                                  <path transform="translate(0 0)" d="M8.752,15.625h0L1.383,8.162a4.824,4.824,0,0,1,0-6.762,4.679,4.679,0,0,1,6.674,0l.694.7.694-.7a4.678,4.678,0,0,1,6.675,0,4.825,4.825,0,0,1,0,6.762L8.752,15.624ZM4.72,1.25A3.442,3.442,0,0,0,2.277,2.275a3.562,3.562,0,0,0,0,5l6.475,6.556,6.475-6.556a3.563,3.563,0,0,0,0-5A3.443,3.443,0,0,0,12.786,1.25h-.01a3.415,3.415,0,0,0-2.443,1.038L8.752,3.9,7.164,2.275A3.442,3.442,0,0,0,4.72,1.25Z" id="Fill"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="ficha3">
+                        <img src="./Assets/IMAGENES/camping.jpg" alt="Pizza-completa">
+                        <div class="precio">
+                            <p> 
+                                Área de camping
+                            </p>
+                            <button class="btn">
+                                <svg viewBox="0 0 17.503 15.625" height="20.625" width="20.503" xmlns="http://www.w3.org/2000/svg" class="icon">
+                                  <path transform="translate(0 0)" d="M8.752,15.625h0L1.383,8.162a4.824,4.824,0,0,1,0-6.762,4.679,4.679,0,0,1,6.674,0l.694.7.694-.7a4.678,4.678,0,0,1,6.675,0,4.825,4.825,0,0,1,0,6.762L8.752,15.624ZM4.72,1.25A3.442,3.442,0,0,0,2.277,2.275a3.562,3.562,0,0,0,0,5l6.475,6.556,6.475-6.556a3.563,3.563,0,0,0,0-5A3.443,3.443,0,0,0,12.786,1.25h-.01a3.415,3.415,0,0,0-2.443,1.038L8.752,3.9,7.164,2.275A3.442,3.442,0,0,0,4.72,1.25Z" id="Fill"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="ficha1">
+                        <img src="./Assets/IMAGENES/casaarbol1.jpg" alt="Pizza-completa">
+                        <div class="precio">
+                            <p> 
+                                Casa de árbol
+                            </p>
+                            <button class="btn">
+                                <svg viewBox="0 0 17.503 15.625" height="20.625" width="20.503" xmlns="http://www.w3.org/2000/svg" class="icon">
+                                  <path transform="translate(0 0)" d="M8.752,15.625h0L1.383,8.162a4.824,4.824,0,0,1,0-6.762,4.679,4.679,0,0,1,6.674,0l.694.7.694-.7a4.678,4.678,0,0,1,6.675,0,4.825,4.825,0,0,1,0,6.762L8.752,15.624ZM4.72,1.25A3.442,3.442,0,0,0,2.277,2.275a3.562,3.562,0,0,0,0,5l6.475,6.556,6.475-6.556a3.563,3.563,0,0,0,0-5A3.443,3.443,0,0,0,12.786,1.25h-.01a3.415,3.415,0,0,0-2.443,1.038L8.752,3.9,7.164,2.275A3.442,3.442,0,0,0,4.72,1.25Z" id="Fill"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+                    <div class="ficha3">
+                        <img src="./Assets/IMAGENES/senderismo1.jpg" alt="Pizza-completa">
+                        <div class="precio">
+                            <p> 
+                                Camino ecólogico
+                            </p>
+                            <button class="btn">
+                                <svg viewBox="0 0 17.503 15.625" height="20.625" width="20.503" xmlns="http://www.w3.org/2000/svg" class="icon">
+                                  <path transform="translate(0 0)" d="M8.752,15.625h0L1.383,8.162a4.824,4.824,0,0,1,0-6.762,4.679,4.679,0,0,1,6.674,0l.694.7.694-.7a4.678,4.678,0,0,1,6.675,0,4.825,4.825,0,0,1,0,6.762L8.752,15.624ZM4.72,1.25A3.442,3.442,0,0,0,2.277,2.275a3.562,3.562,0,0,0,0,5l6.475,6.556,6.475-6.556a3.563,3.563,0,0,0,0-5A3.443,3.443,0,0,0,12.786,1.25h-.01a3.415,3.415,0,0,0-2.443,1.038L8.752,3.9,7.164,2.275A3.442,3.442,0,0,0,4.72,1.25Z" id="Fill"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="ficha3">
+                        <img src="./Assets/IMAGENES/fogata.jpg" alt="Pizza-completa">
+                        <div class="precio">
+                            <p> 
+                                Área de fogata
+                            </p>
+                            <button class="btn">
+                                <svg viewBox="0 0 17.503 15.625" height="20.625" width="20.503" xmlns="http://www.w3.org/2000/svg" class="icon">
+                                  <path transform="translate(0 0)" d="M8.752,15.625h0L1.383,8.162a4.824,4.824,0,0,1,0-6.762,4.679,4.679,0,0,1,6.674,0l.694.7.694-.7a4.678,4.678,0,0,1,6.675,0,4.825,4.825,0,0,1,0,6.762L8.752,15.624ZM4.72,1.25A3.442,3.442,0,0,0,2.277,2.275a3.562,3.562,0,0,0,0,5l6.475,6.556,6.475-6.556a3.563,3.563,0,0,0,0-5A3.443,3.443,0,0,0,12.786,1.25h-.01a3.415,3.415,0,0,0-2.443,1.038L8.752,3.9,7.164,2.275A3.442,3.442,0,0,0,4.72,1.25Z" id="Fill"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="ficha3">
+                        <img src="./Assets/IMAGENES/comedor.jpg" alt="Pizza-completa">
+                        <div class="precio">
+                            <p> 
+                                Espacio de Eventos
+                            </p>
+                            <button class="btn">
+                                <svg viewBox="0 0 17.503 15.625" height="20.625" width="20.503" xmlns="http://www.w3.org/2000/svg" class="icon">
+                                  <path transform="translate(0 0)" d="M8.752,15.625h0L1.383,8.162a4.824,4.824,0,0,1,0-6.762,4.679,4.679,0,0,1,6.674,0l.694.7.694-.7a4.678,4.678,0,0,1,6.675,0,4.825,4.825,0,0,1,0,6.762L8.752,15.624ZM4.72,1.25A3.442,3.442,0,0,0,2.277,2.275a3.562,3.562,0,0,0,0,5l6.475,6.556,6.475-6.556a3.563,3.563,0,0,0,0-5A3.443,3.443,0,0,0,12.786,1.25h-.01a3.415,3.415,0,0,0-2.443,1.038L8.752,3.9,7.164,2.275A3.442,3.442,0,0,0,4.72,1.25Z" id="Fill"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="ficha3">
+                        <img src="./Assets/IMAGENES/parque.jpg" alt="Pizza-completa">
+                        <div class="precio">
+                            <p> 
+                                Parque Infántil
+                            </p>
+                            <button class="btn">
+                                <svg viewBox="0 0 17.503 15.625" height="20.625" width="20.503" xmlns="http://www.w3.org/2000/svg" class="icon">
+                                  <path transform="translate(0 0)" d="M8.752,15.625h0L1.383,8.162a4.824,4.824,0,0,1,0-6.762,4.679,4.679,0,0,1,6.674,0l.694.7.694-.7a4.678,4.678,0,0,1,6.675,0,4.825,4.825,0,0,1,0,6.762L8.752,15.624ZM4.72,1.25A3.442,3.442,0,0,0,2.277,2.275a3.562,3.562,0,0,0,0,5l6.475,6.556,6.475-6.556a3.563,3.563,0,0,0,0-5A3.443,3.443,0,0,0,12.786,1.25h-.01a3.415,3.415,0,0,0-2.443,1.038L8.752,3.9,7.164,2.275A3.442,3.442,0,0,0,4.72,1.25Z" id="Fill"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </header>
-        
-        <main class="d-flex flex-wrap justify-content-center" >
-          <div class="  m-2 d-flex flex-wrap">
-            
-            
-            
-          </div>  
-          <div class=" text-center justify-content-center align-items-center  w-100 flex-wrap">
-            <div class="frase ">
-              <h4 class="m-3 p-5">Hermosa finca para tu descanso con todas las comodidas que mereces</h4>
-              
-            </div>
-          </div>
-          
-            <div class="contenedor4 proyectos justify-content-evenly d-flex flex-wrap w-100" id="proyectos">
-                
-                <div class="d-flex flex-wrap text-light align-items-evenly ">    
-                  <div class=" sobre-mi d-flex flex-wrap align-items-center texto ">
-                      <h2 class="m-1 bien">Bienvenidos </h2><h4 class=" text-center ms-4 p-1">FINCA SAN DIEGO</h4>
-                      <p>Un lugar para compartir en familia y con amigos,  desconectar, disfrutar de la naturaleza, todo tipo de eventos,  casa en el árbol, Piscina, voley playa, parque infantil, ping-pong, bolirana electronica, minitejo en plastilina, zona de hamacas, juegos de mesa, fogata, sendero ecológico,  wifi.
-                      </p>
+            <div class="contenedorgrupos d-flex flex-wrap">
+                <div id="carouselExample" class="carousel carru-grupo slide col-md-6 ">
+                    <div class="carousel-inner">
+                      <div class="carousel-item ">
+                        <img src="./assets/IMAGENES/grupo8.jpg" class="d-block w-100 imgg" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/IMAGENES/grupo7.jpg" class="d-block w-100 imgg" alt="...">
+                      </div>
+                      <div class="carousel-item active">
+                        <img src="./assets/IMAGENES/grupo6.jpg" class="d-block w-100 imgg" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/IMAGENES/grupo3.jpg" class="d-block w-100 imgg" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                   </div>
-                  <div class="d-flex  flex-wrap ">
-                    <div id="carouselExampleDark" class="carousel carousel-dark slide">
-                      <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="10000">
-                          <img src="./assets/IMAGENES/piscina1.jpg " class="d-block lugar" alt="Piscina">
-                          <div class="carousel-caption d-none  d-md-block">
-                            <h5>Piscina </h5>
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="./assets/IMAGENES/casaarbol1.jpg" class="d-block  lugar" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>Casa del Arbol</h5>
-                          </div>
-                        </div>
-                        <div class="carousel-item" >
-                          <img src="./assets/IMAGENES/cancha2.jpg" class="d-block  lugar" alt="...">
-                          <div class="carousel-caption d-none  d-md-block">
-                            <h5>Cancha de Voleibol</h5>
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="./assets/IMAGENES/juego.jpg" class="d-block  lugar" alt="...">
-                          <div class="carousel-caption d-none   d-md-block">
-                            <h5>Zona de juegos</h5>
-                          </div>
-                        </div>
-                        <div class="carousel-item" >
-                          <img src="./assets/IMAGENES/senderismo1.jpg" class="d-block lugar" alt="...">
-                          <div class="carousel-caption d-none  d-md-block">
-                            <h5>Camino Ecologico</h5>
-                          </div>
-                        </div>
-                        <div class="carousel-item" >
-                          <img src="./assets/IMAGENES/camping.jpg" class="d-block  lugar" alt="...">
-                          <div class="carousel-caption d-none  d-md-block">
-                            <h5>Zona de camping</h5>
-                          </div>
-                        </div>
-                        <div class="carousel-item" >
-                          <img src="./assets/IMAGENES/comedor.jpg" class="d-block  lugar" alt="...">
-                          <div class="carousel-caption  d-none  d-md-block">
-                            <h5>Zona de Eventos</h5>
-                          </div>
-                        </div>
                   
+                  <div class="d-flex columnas mt-2 ">
+                    <p class="hit-the-floor3 pequeno text-black">Pasea por nuestras memorias compartidas</p>
+                    <p class="textocursivo"> Echa un vistazo a las fotos de nuestros queridos grupos disfrutando de su tiempo en nuestra Finca</p>
+                    <div class=" ">
+                        <ul class="list-unstyled d-flex justify-content-around mb-0 mt-3 mx-auto redes">
+                          <li ><a class="link-dark-hover text-muted" href="https://www.instagram.com/finca_sandiego1/"><i class="fa-brands fa-instagram fa-2x "></i></a></li>
+                          <li ><a class="link-dark-hover text-muted" href="https://www.facebook.com/eliana.ariza.522"><i class="fa-brands fa-facebook fa-2x "> </i></a></li>
+                        </ul>
+                      </div>
+                      
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-
             </div>
-                
-          </div>
-        </div>
-        <div>
-          <div class="text-center">
-            <h3 >ALGUNOS DE NUESTROS CLIENTES FELICES</h3>
-            <div class="d-flex">
-              <img src="./assets/IMAGENES/grupo1.jpg" alt="" class="grupo">
-              <img src="./assets/IMAGENES/grupo2.jpg" alt="" class="grupo">
-              <img src="./assets/IMAGENES/grupo3.jpg" alt="" class="grupo"> 
+            <div id="contactar" class="contenedorinfo1">
+                <div class="info1 ">
+                    <p class="text-center titulocursiva">VELÉZ </p>
+                    <p class="p-2 text-black">Encantadora Provincia ubicada en el departamento de Santander, reconocida por su rica historia colonial, su entorno natural pintoresco además de su gastronomía donde resalta el famoso Bocadillo Veleño. Situada en el valle del río Suárez y rodeada de montañas, Vélez ofrece a los visitantes un ambiente tranquilo y acogedor, ideal para aquellos que buscan desconectarse de la rutina y explorar paisajes naturales.</p>
+                    <a class="fancy" href="https://api.whatsapp.com/send/?phone=3112234294">
+                        <span class="top-key"></span>
+                        <span class="text">CONTÁCTANOS     <img class="wt"src="./assets/IMAGENES/whatsapp.png" alt=""></span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                    </div>
             </div>
-          </div>
-        </div>
-          <div class="redes w-100 text-center align-items-center">
-            <div >
-              <h3 class="bien text-white w-100 ">Nuestras redes sociales</h3>
-              <ul class="list-unstyled d-flex justify-content-around mb-0 mt-3 mx-auto redes">
-                <li ><a class="link-dark-hover text-muted" href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2x text-white icono-redes"></i></a></li>
-                <li ><a class="link-dark-hover text-muted" href="https://www.facebook.com/eliana.ariza.522"><i class="fa-brands fa-facebook fa-2x text-white icono-redes"></i></a></li>
-                <li ><a class="link-dark-hover text-muted" href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp fa-2x text-white icono-redes"></i></a></li>
+            
+    </main>
+    <footer id="contactanos" class="d-flex flex-column   mt-1">
+        <div class="d-flex footertop align-items-center">
+            <div class="d-sm-flex logo-footer align-items-md-center">
+                <img class="container-fluid logo " src="./assets/IMAGENES/sandiego.png" alt="logo" >
+            </div>
+            <div class="d-flex flex-md-row flex-column ms-md-5  mt-1 flex-lg-row ">
+                <ul class="nav  d-flex  justify-content-center align-items-center flex-column">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15871.71848459323!2d-73.68389423237512!3d6.004402493850409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e41f0174649ac63%3A0xc1e607c20da0b0c5!2zVsOsYSBHdWF2YXTDoCwgVsOpbGV6LCBTYW50YW5kZXIsIENvbG9tYmlh!5e0!3m2!1ses-419!2scl!4v1718440572055!5m2!1ses-419!2scl" width="150" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+                    <li class="text-center mt-2 mb-2"><i class="fa fa-map-marker text-warning fa-fw" aria-hidden="true"></i>&nbsp; VELÉZ SANTANDER, VIA GUAVATA KM 2</li>
+                </ul>
+            </div>
+            <div>
+                <p class="contact text-md-start fw-bold"><i class="fa fa-phone fa-fw" aria-hidden="true"></i>&nbsp; TEL: <a class="link-secondary link-white-hover text-decoration-none" href="tel:+57 311 2234294">+57 311 2234294</a></p>
+                <p class="contact text-md-start fw-bold"><i class="fa fa-phone fa-fw" aria-hidden="true"></i>&nbsp; TEL: <a class="link-secondary link-white-hover text-decoration-none" href="tel:+57 311 2329023">+57 311 2329023</a></p>
         
-              </ul>
             </div>
-          </div>
-                        
-                    
-                
-            
-        </main>
-        <footer class="d-flex  align-items-center" id="contacto">
-            
-            <div class="col-4 justify-content-center">
-                <h2 class="ms-4">CONTÁCTAME :</h2>
-            </div>
-            <div class="d-flex  justify-content-evenly ">
-                <div>
-                    <p class="contact text-md-start fw-bold"><i class="fa  fa-envelope-o fa-fw" aria-hidden="true"></i>&nbsp; EMAIL: <a class=" text-black link-contacto text-decoration-none" href="mailto:sofiaariza15@hotmail.com">Elianamilitza@gmail.com</a></p>
-                </div>
-                <div>
-                    <p class="contact text-md-start fw-bold"><i class="fa   fa-phone fa-fw" aria-hidden="true"></i>&nbsp; TEL: <a class="text-black  text-decoration-none link-contacto" href="tel:+53 313 599 3385">+57 311 2234294</a></p>
-                </div>
-            </div>
-            
-        </footer>
-    </div>
+        </div>
+        <div class="footerbotton d-flex text-center p-2 justify-content-center align-items-center">
+            <p id="copyright" class="cp">Copyright&copy;  Finca San Diego ,Veléz Santander. Todos los derechos reservados 2024. - Desarrollador Web : </p> <a  href="https://api.whatsapp.com/send/?phone=3218773761" class="text-black"> Sofía Ariza 
+            </a>
+        </div>
+  
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     
 </body>
 </html>
+
+
