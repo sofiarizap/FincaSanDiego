@@ -13,7 +13,7 @@ header{
     height: 90vh;
     background-size: cover;
     background-position: 10% 14%;
-    background-image: linear-gradient( to top,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.271) ), url("./assets/IMAGENES/baner1.jpg")
+    background-image: linear-gradient( to top,rgba(0, 0, 0, 0.348), rgba(0, 0, 0, 0.468) ), url("./assets/IMAGENES/baner1.jpg")
 }
 .headerTop{
     display: flex;
@@ -42,9 +42,7 @@ header nav a{
 .hit-the-floor {
     color: #fff;
     font-size: 5rem;
-    font-weight: bold;
     font-family: Helvetica;
-    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
 }
     
 .hit-the-floor {
@@ -54,10 +52,8 @@ header nav a{
         margin-left: 1rem;
         color: #fff;
         font-size: 3rem;
-        font-weight: bold;
         font-family: "Dancing Script", cursive;
         font-style: normal;
-        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
         }
 header nav {
     position: relative;
@@ -103,7 +99,7 @@ main{
     height: 250px;
     display: flex;
     flex-direction: column;
-    background-color: #ffffffd2;
+    background-color: #ffffffe8;
     margin-right: 4rem;
 
 }
@@ -117,11 +113,23 @@ main{
     color: #586859;
     font-size: 20px;
 }
+.direccion{
+    color: #586859;
+    font-size: 16px;
+}
+.titulocursiva{
+    color: #586859;
+    font-size: 23px;
+}
 .contenedorcarrusel{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap:wrap;
+}
+.direccion img{
+    width: 30px;
+    height: 30px;
 }
 .tituloNav h2{
     margin-bottom: 3rem;
