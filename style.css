@@ -21,7 +21,10 @@ header{
     justify-content: end;
     height: 30%;
 }
-
+.precio{
+    display: flex;
+    justify-content: space-between;
+}
 .headerBottom {
     display: flex;
     flex-direction: column;
@@ -52,9 +55,20 @@ header nav a{
         margin-left: 1rem;
         color: #fff;
         font-size: 3rem;
-        font-family: "Dancing Script", cursive;
+        font-family: "Playwrite AU NSW", cursive;
+        font-optical-sizing: auto;
         font-style: normal;
-        }
+        font-weight: 100;
+}
+.hit-the-floor3 {
+    margin-left: 1rem;
+    color: #fff;
+    font-size: 2rem;
+    font-family: "Playwrite AU NSW", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 100;
+}
 header nav {
     position: relative;
     color: black;
@@ -78,9 +92,17 @@ main{
     border-bottom: 1px solid white;
 }
 .mainTop{
+    border-top: #586859 4px solid;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient( to top,rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.725) ), url("./assets/IMAGENES/fondo.jpg")
+    background-size: cover;
+    background-image: linear-gradient( to top,rgba(255, 255, 255, 0.878), rgba(255, 255, 255, 0.725) ), url("./assets/IMAGENES/fondo.jpg")
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-image: linear-gradient( to top,rgba(255, 255, 255, 0.878), rgba(255, 255, 255, 0.725) ), url("./assets/IMAGENES/fondo.jpg")
 }
 .contenedorinfo{
     display: flex;
@@ -90,6 +112,15 @@ main{
     background-size: cover;
     background-position: -80% 14%;
     background-image: linear-gradient( to top,rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.114) ), url("./assets/IMAGENES/entrada2.jpg")
+}
+.contenedorinfo1{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 90vh;
+    background-size: cover;
+    background-position: 30rem 0 0 0;
+    background-image: linear-gradient( to top,rgba(255, 255, 255, 0.181), rgba(255, 255, 255, 0.252) ), url("./assets/IMAGENES/iglesia.jpg")
 
 }
 .info{
@@ -121,11 +152,30 @@ main{
     color: #586859;
     font-size: 23px;
 }
+.columna{
+    flex-direction: column;
+    display: flex;
+}
+.textocursivo{
+    text-transform:uppercase;
+    font-weight: 200;
+    margin: 1rem;
+    font-size: 1rem;
+    text-align: justify;
+    padding-bottom: 2rem;
+}
 .contenedorcarrusel{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap:wrap;
+}
+.contenedorgrupos{
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
 }
 .direccion img{
     width: 30px;
@@ -169,29 +219,34 @@ main{
 .fichas{
     display: flex;
     justify-content: center;
-    margin: 1rem;
     flex-wrap: wrap;
+    border-top: #586859 0.8px solid;
+}
+.fichas p{
+    color: #000;
+    margin-top: 15px;
+    
 }
 .ficha1{
     display: flex;
     flex-direction: column;
-    margin: 1.4rem;
+    margin: 1.2rem;
+    
 }
 .ficha2{
     display: flex;
     flex-direction: column;
-    margin: 1.4rem;
+    margin: 1.2rem;
 }
 .ficha3{
     display: flex;
     flex-direction: column;
-    margin: 1.4rem;
+    margin: 1.2rem;
 }
 .fichas img{
     width: 260px;
     height: 250px;
-    border: 1px solid white;
-    border-radius: 10px;
+    border: #586859 2px solid;
 }
 .carousel-inner img{
     width: 260px;
@@ -214,31 +269,8 @@ main{
         margin: 0 1rem 2rem 1rem;
     }
 }
-.listaCuadro{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-tr,th,td{
-    border: 2px solid rgb(248, 245, 245);
-    font-size: 1rem;
-    color: aliceblue;
-    padding: 10px;
-    text-align: left;
-}
-body{
-    background-color: black;
-    color: white;
-}
-footer{
-    height: 14vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap:9rem;
-    align-items: center;
-}
+
+
 @media (min-width: 425px) and (max-width: 860px){
     footer{
         height: 7vh;
@@ -246,16 +278,7 @@ footer{
     }
 }
 
-footer a{
-    text-decoration: none;
-    color: white;
-    margin: 0.5rem;
-}
-.footer1, .footer2, .footer3{
-    margin: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .fancy {
     background-color: transparent;
     border: 2px solid #000;
@@ -350,5 +373,48 @@ footer a{
     right: 0;
     width: 0;
 }
-
-
+.btn {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+}
+.btn::after {
+    content: 'like';
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s linear;
+    top: 100%;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    transition: .2s linear;
+}
+.icon path {
+    fill: rgb(0, 0, 0);
+    transition: .2s linear;
+}
+.btn:hover > .icon {
+    transform: scale(1.2);
+}
+.btn:hover > .icon path {
+    fill: #586859;
+}
+.btn:hover::after {
+    visibility: visible;
+    opacity: 1;
+    top: 85%;
+}
