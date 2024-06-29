@@ -335,29 +335,37 @@ body{
 }
 .fichas p{
     color: #000;
-    margin-top: 15px;
+    margin-top: 30px;
     
 }
 .ficha1{
     display: flex;
     flex-direction: column;
-    margin: 1.2rem;
+    margin: 0.5rem 1.2rem;
     
 }
 .ficha2{
     display: flex;
     flex-direction: column;
-    margin: 1.2rem;
+    margin: 0.5rem 1.2rem;
 }
 .ficha3{
     display: flex;
     flex-direction: column;
-    margin: 1.2rem;
+    margin: 0.5rem 1.2rem;
 }
 .fichas img{
     width: 280px;
     height: 270px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+#img-contenedor img {
+    transform: scale(var(--escala, 1));
+    transition: transform 0.25s;
+}
+#img-contenedor:hover img {
+    --escala: 1.2;
+    cursor:pointer;
 }
 .imgg{
     height: 400px;
