@@ -319,7 +319,13 @@ body{
         height:400px ;
         width: 100%;
     }
-    
+    .texto-fichas{
+        font-size: 10px;
+        width: 400px;
+    }
+    .rficha{
+        justify-content: center;
+    }
 }
 .tituloNav a{
     color: white;
@@ -359,6 +365,10 @@ body{
     height: 270px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
+.texto-fichas{
+    flex-direction: column;
+    text-align: justify;
+}
 #img-contenedor img {
     transform: scale(var(--escala, 1));
     transition: transform 0.25s;
@@ -379,11 +389,34 @@ body{
 .rooms{
     background-color: #7c807c;
     flex-direction: column;
-    
+
+}
+.rficha{
+    flex-wrap: wrap;
+}
+.roomimg{
+    width: 260px;
+    height: 250px;
+    margin: 1rem;
+    box-shadow: 4px 7px 2px 1px rgba(3, 3, 3, 0.2);
 }
 .video{
     height:800px ;
     width: 100%;
+}
+.fichas-rooms{
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.texto-fichas{
+    width: 500px;
+}
+.icono{
+    height:25px ;
+    width: 22px;
+    margin: 8px;
 }
 .mainBottom{
     display: flex;
