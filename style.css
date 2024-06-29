@@ -79,7 +79,10 @@ header nav a:hover {
     text-decoration: 1px white solid;
     color: #fff;
 }
-
+main{
+    min-height: 130vh;
+    border-bottom: 1px solid white;
+}
 .mainTop{
     border-top: #586859 4px solid;
     display: flex;
@@ -189,6 +192,7 @@ body{
 }
 .carru-grupo{
     width:  40%;
+    height: 400px;
 }
 .pequeno{
     text-align: center;
@@ -239,18 +243,14 @@ body{
     }
     .info1{
         text-align: justify;
+        width: 560px;
+        height: 400px;
         display: flex;
         flex-direction: column;
         background-color: #ffffff9a;
         margin-right: 4rem;
         padding: 1rem;
         font-weight: 500;
-    }
-    .info1{
-        width: 96%;
-        height: 460px;
-        display: flex;
-        margin: 10px;
     }
     .hit-the-floor {
         font-size: 3rem;
@@ -291,7 +291,15 @@ body{
         display: flex;
         margin: 10px;
     }
-    
+    .info1{
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        width: 96%;
+        height: 520px;
+        display: flex;
+        margin: 10px;
+    }
     .pequeno{
         font-size: 1.3rem;
         text-align: center;
@@ -303,16 +311,13 @@ body{
     .centro{
         text-align: center;
     }
-    .fichas img{
-        width: 100%;
-        height: 300px;
-        box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    .imgg{
+        height: 400px;
+        margin: 1rem 0;
     }
-    .ficha1 .ficha2 .ficha3{
-        margin: 0rem;
-    }.fichas{
-        margin: 0rem;
-        padding: 0rem;
+    .video{
+        height:400px ;
+        width: 100%;
     }
     
 }
@@ -325,9 +330,8 @@ body{
 
 .fichas{
     display: flex;
-
+    justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
 }
 .fichas p{
     color: #000;
@@ -337,27 +341,36 @@ body{
 .ficha1{
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin: 1.2rem;
     
 }
 .ficha2{
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin: 1.2rem;
 }
 .ficha3{
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin: 1.2rem;
 }
 .fichas img{
-    width: 380px;
+    width: 280px;
     height: 270px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.carousel-inner img{
+.imgg{
+    height: 400px;
+    box-shadow: 4px 2px 2px 1px rgba(3, 3, 3, 0.2);
+}
+.imgc{
     width: 260px;
     height: 250px;
+    box-shadow: 4px 7px 2px 1px rgba(3, 3, 3, 0.2);
+}
+.video{
+    height:800px ;
+    width: 100%;
 }
 .mainBottom{
     display: flex;
@@ -456,4 +469,3 @@ body{
     opacity: 1;
     top: 85%;
 }
-
