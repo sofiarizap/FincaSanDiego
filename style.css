@@ -335,7 +335,7 @@ body{
 }
 .fichas p{
     color: #000;
-    margin-top: 30px;
+    margin-top: 40px;
     
 }
 .ficha1{
@@ -375,6 +375,11 @@ body{
     width: 260px;
     height: 250px;
     box-shadow: 4px 7px 2px 1px rgba(3, 3, 3, 0.2);
+}
+.rooms{
+    background-color: #7c807c;
+    flex-direction: column;
+    
 }
 .video{
     height:800px ;
@@ -433,7 +438,7 @@ body{
     color: #fff;
 }
 .btn {
-    margin-top: 10px;
+    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
