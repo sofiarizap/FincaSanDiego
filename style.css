@@ -316,15 +316,18 @@ body{
         margin: 1rem 0;
     }
     .video{
-        height:400px ;
+        height:200px ;
         width: 100%;
     }
     .texto-fichas{
         font-size: 10px;
-        width: 400px;
+        margin: 0;
+        width: 300px;
     }
     .rficha{
         justify-content: center;
+        width: 400px;
+        padding:  0rem 1,4rem;
     }
 }
 .tituloNav a{
@@ -387,12 +390,13 @@ body{
     box-shadow: 4px 7px 2px 1px rgba(3, 3, 3, 0.2);
 }
 .rooms{
-    background-color: #7c807c;
+    background-image: linear-gradient( to top,rgba(141, 140, 140, 0.795), rgba(128, 127, 127, 0.596) ), url("./assets/IMAGENES/fondo.jpg");
     flex-direction: column;
-
+    background-size: cover;
 }
 .rficha{
     flex-wrap: wrap;
+    
 }
 .roomimg{
     width: 260px;
