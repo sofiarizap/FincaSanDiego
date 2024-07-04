@@ -519,3 +519,12 @@ body{
     opacity: 1;
     top: 85%;
 }
+.frecuentes{
+    flex-direction: column;
+}
+.accordion {
+    color:green;
+}
+.preguntas{
+    background-color: #79b17d5b;
+}

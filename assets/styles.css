@@ -6,9 +6,13 @@
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    
 
 }
+.movile{
+    background-image: linear-gradient( to top,rgba(58, 190, 40, 0.836), rgba(58, 190, 40, 0.836) ), url("./assets/IMAGENES/fondo.jpg")
 
+}
 .button {
     display: inline-block;
     padding: 12px 24px;
