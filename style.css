@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
 
 }
@@ -322,13 +322,16 @@ body{
     .texto-fichas{
         font-size: 10px;
         margin: 0;
-        width: 300px;
+        width: 290px;
     }
     .rficha{
         justify-content: center;
         width: 400px;
         padding:  0rem 1,4rem;
     }
+}
+.rooms{
+    font-weight: 400;
 }
 .tituloNav a{
     color: white;
