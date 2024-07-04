@@ -247,10 +247,10 @@ body{
         height: 400px;
         display: flex;
         flex-direction: column;
-        background-color: #ffffff9a;
+        background-color: #ffffffd0;
         margin-right: 4rem;
         padding: 1rem;
-        font-weight: 500;
+        font-weight: 500 !important;
     }
     .hit-the-floor {
         font-size: 3rem;
@@ -325,15 +325,20 @@ body{
         width: 290px;
     }
     .rficha{
-        justify-content: center;
         width: 400px;
         padding:  0rem 1,4rem;
+        background-color: #ffffffb0;
+        border: 3px solid black;
+        border-radius: 5px;
+        margin: 10px 0;
+        color: #fff;
+        text-align: center;
+        justify-content: center;
+        padding: 5px;
+
     }
 }
-.rooms{
-    font-weight: 900;
-    
-}
+
 .tituloNav a{
     color: white;
     text-decoration: none;
