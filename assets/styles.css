@@ -9,9 +9,9 @@
     
 
 }
-.movile{
-    background-image: linear-gradient( to top,rgba(58, 190, 40, 0.836), rgba(58, 190, 40, 0.836) ), url("./assets/IMAGENES/fondo.jpg")
 
+.autor{
+    font-size: 10px;
 }
 .button {
     display: inline-block;
