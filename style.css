@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
 
 }
@@ -79,7 +79,10 @@ header nav a:hover {
     text-decoration: 1px white solid;
     color: #fff;
 }
-
+main{
+    min-height: 130vh;
+    border-bottom: 1px solid white;
+}
 .mainTop{
     border-top: #586859 4px solid;
     display: flex;
@@ -189,6 +192,7 @@ body{
 }
 .carru-grupo{
     width:  40%;
+    height: 400px;
 }
 .pequeno{
     text-align: center;
@@ -239,18 +243,14 @@ body{
     }
     .info1{
         text-align: justify;
+        width: 560px;
+        height: 400px;
         display: flex;
         flex-direction: column;
-        background-color: #ffffff9a;
+        background-color: #ffffffd0;
         margin-right: 4rem;
         padding: 1rem;
-        font-weight: 500;
-    }
-    .info1{
-        width: 96%;
-        height: 460px;
-        display: flex;
-        margin: 10px;
+        font-weight: 500 !important;
     }
     .hit-the-floor {
         font-size: 3rem;
@@ -291,7 +291,15 @@ body{
         display: flex;
         margin: 10px;
     }
-    
+    .info1{
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        width: 96%;
+        height: 520px;
+        display: flex;
+        margin: 10px;
+    }
     .pequeno{
         font-size: 1.3rem;
         text-align: center;
@@ -303,19 +311,34 @@ body{
     .centro{
         text-align: center;
     }
-    .fichas img{
+    .imgg{
+        height: 400px;
+        margin: 1rem 0;
+    }
+    .video{
+        height:200px ;
         width: 100%;
-        height: 300px;
-        box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
     }
-    .ficha1 .ficha2 .ficha3{
-        margin: 0rem;
-    }.fichas{
-        margin: 0rem;
-        padding: 0rem;
+    .texto-fichas{
+        font-size: 10px;
+        margin: 0;
+        width: 290px;
     }
-    
+    .rficha{
+        width: 400px;
+        padding:  0rem 1,4rem;
+        background-color: #ffffffb0;
+        border: 3px solid black;
+        border-radius: 5px;
+        margin: 10px 0;
+        color: #fff;
+        text-align: center;
+        justify-content: center;
+        padding: 5px;
+
+    }
 }
+
 .tituloNav a{
     color: white;
     text-decoration: none;
@@ -325,39 +348,88 @@ body{
 
 .fichas{
     display: flex;
-
+    justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
 }
 .fichas p{
     color: #000;
-    margin-top: 15px;
+    margin-top: 40px;
     
 }
 .ficha1{
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin: 0.5rem 1.2rem;
     
 }
 .ficha2{
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin: 0.5rem 1.2rem;
 }
 .ficha3{
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin: 0.5rem 1.2rem;
 }
 .fichas img{
-    width: 380px;
+    width: 280px;
     height: 270px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.carousel-inner img{
+.texto-fichas{
+    flex-direction: column;
+    text-align: justify;
+}
+#img-contenedor img {
+    transform: scale(var(--escala, 1));
+    transition: transform 0.25s;
+}
+#img-contenedor:hover img {
+    --escala: 1.2;
+    cursor:pointer;
+}
+.imgg{
+    height: 400px;
+    box-shadow: 4px 2px 2px 1px rgba(3, 3, 3, 0.2);
+}
+.imgc{
     width: 260px;
     height: 250px;
+    box-shadow: 4px 7px 2px 1px rgba(3, 3, 3, 0.2);
+}
+.rooms{
+    background-image: linear-gradient( to top,rgba(141, 140, 140, 0.795), rgba(128, 127, 127, 0.596) ), url("./assets/IMAGENES/fondo.jpg");
+    flex-direction: column;
+    background-size: cover;
+}
+.rficha{
+    flex-wrap: wrap;
+    
+}
+.roomimg{
+    width: 260px;
+    height: 250px;
+    margin: 1rem;
+    box-shadow: 4px 7px 2px 1px rgba(3, 3, 3, 0.2);
+}
+.video{
+    height:800px ;
+    width: 100%;
+}
+.fichas-rooms{
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.texto-fichas{
+    width: 500px;
+}
+.icono{
+    height:25px ;
+    width: 22px;
+    margin: 8px;
 }
 .mainBottom{
     display: flex;
@@ -412,7 +484,7 @@ body{
     color: #fff;
 }
 .btn {
-    margin-top: 10px;
+    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -456,4 +528,12 @@ body{
     opacity: 1;
     top: 85%;
 }
-
+.frecuentes{
+    flex-direction: column;
+}
+.accordion {
+    color:green;
+}
+.preguntas{
+    background-color: #79b17d5b;
+}
