@@ -12,6 +12,12 @@
     color: black;
     z-index: 1;
 }
+.fondomobile{
+    background-color: black;
+}
+.mobile{
+    background-color: black;
+}
 .button:before {
     content: "";
     position: absolute;
